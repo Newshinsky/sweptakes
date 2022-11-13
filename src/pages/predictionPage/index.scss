@@ -1,0 +1,163 @@
+.prediction-page-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .match-info-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid wheat;
+        border-radius: 2vw;
+        margin-bottom: 2vw;
+
+        .prediction-match-item-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            width: 47vw;
+
+            .home-team-wrapper,
+            .away-team-wrapper {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                padding: 0;
+                margin: 0;
+
+                img {
+                    max-width: 30%;
+                    max-height: 30%;
+                    margin: 1vw;
+                }
+
+                input {
+                    width: 3vw;
+                    height: 3vw;
+                    font-size: 3vw;
+                    text-align: center;
+                }
+
+                h1 {
+                    color: #fff;
+                    font-size: 4vw;
+                    padding: 1vw;
+                }
+
+                p {
+                    font-size: 2vw;
+                    color: #fff;
+                }
+
+            }
+
+            .home-team-wrapper {
+                justify-content: flex-end;
+            }
+
+            .away-team-wrapper {
+                justify-content: flex-start;
+            }
+
+            .colon {
+                font-size: 2vw;
+                color: #fff;
+            }
+        }
+
+        .finish-match {
+            font-size: 2vw;
+            color: #fff;
+            margin-bottom: 2vw;
+        }
+
+        .submit-button {
+            font-size: 2vw;
+            color: #fff;
+            margin-bottom: 1vw;
+            padding: 2vw;
+            border-radius: 2vw;
+            color: rgb(0, 0, 0);
+        }
+    }
+
+    .match-info-type {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: .5vw;
+        color: #fff;
+        margin-bottom: 2vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .prediction-page-wrapper {
+
+
+        .match-info-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid wheat;
+            border-radius: 2vw;
+            margin-bottom: 2vw;
+
+            .prediction-match-item-wrapper {
+
+                width: 90vw;
+
+                .home-team-wrapper,
+                .away-team-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    padding: 2vw;
+                    margin: 2vw;
+
+                    img {
+                        max-width: 30%;
+                        max-height: 30%;
+                        margin: 3vw;
+                    }
+
+                    input {
+                        width: 10vw;
+                        height: 10vw;
+                        font-size: 6vw;
+                        text-align: center;
+                    }
+
+                    h1 {
+                        color: #fff;
+                        font-size: 10vw;
+                        padding: 1vw;
+                    }
+
+                    p {
+                        font-size: 3vw;
+                        color: #fff;
+                    }
+                }
+            }
+
+        }
+        .match-info-type {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 2vw;
+            color: #fff;
+            margin-bottom: 2vw;
+        }
+    }
+
+}

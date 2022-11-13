@@ -1,0 +1,38 @@
+.standing-page-wrapper {
+
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 2vw;
+    padding: 2vw;
+    margin: 2vw;
+
+    .standing-page-info {
+        display: flex;
+        flex-direction: row;
+        width: 80vw;
+        justify-content: space-between;
+        padding: 0 5vw;
+
+        h1 {
+            color: #fff;
+            font-size: 3vw;
+            padding: .5vw;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .standing-page-wrapper {
+
+      
+
+        .standing-page-info {
+        
+
+            h1 {
+                color: #fff;
+                font-size: 7vw;
+                padding: .5vw;
+            }
+        }
+    }
+}

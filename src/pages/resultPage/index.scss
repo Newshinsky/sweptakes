@@ -1,0 +1,140 @@
+.result-page-wrapper {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .result-page-match {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 2vw;
+        padding: 2vw;
+        margin: 2vw;
+
+        .result-page-match-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .result-page-match-finished-info {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    max-width: 30%;
+                    max-height: 30%;
+                    margin: 1vw;
+                }
+
+                h1 {
+                    color: #fff;
+                    font-size: 3vw;
+                    padding: .5vw;
+                }
+            }
+
+            .result-page-match-type {
+                color: #fff;
+                font-size: 2vw;
+                padding: .5vw;
+            }
+        }
+
+
+        .result-page-match-pred-wrapper {
+            .result-page-match-pred {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .match,
+                .player,
+                .score,
+                .totalScore {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 10vw;
+
+                    .match-info {
+                        display: flex;
+                    }
+                }
+
+
+                h2 {
+                    color: #fff;
+                    font-size: 2vw;
+                    padding: .5vw;
+                }
+
+                h6 {
+                    color: rgb(104, 102, 102);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .result-page-wrapper {
+        .result-page-match {
+            .result-page-match-info {
+                .result-page-match-finished-info {
+                    img {
+                        max-width: 30%;
+                        max-height: 30%;
+                        margin: 2vw;
+                    }
+
+                    h1 {
+                        color: #fff;
+                        font-size: 10vw;
+                        padding: .5vw;
+                    }
+                }
+
+                .result-page-match-type {
+                    color: #fff;
+                    font-size: 5vw;
+                    padding: .5vw;
+                }
+            }
+
+
+            .result-page-match-pred-wrapper {
+                .result-page-match-pred {
+
+                    .match,
+                    .player,
+                    .score,
+                    .totalScore {
+                        width: 20vw;
+
+                        .match-info {
+                            display: flex;
+                        }
+                    }
+
+                    h2 {
+                        color: #fff;
+                        font-size: 5vw;
+                        padding: .5vw;
+                    }
+
+                    h6 {
+                        color: rgb(104, 102, 102);
+                        font-size: 2vw;
+                    }
+                }
+            }
+        }
+    }
+}
