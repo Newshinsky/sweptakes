@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sweptakes/static/css/main.756ce2da.css",
+    "main.js": "/sweptakes/static/js/main.68971bd5.js",
+    "static/js/787.b90ea991.chunk.js": "/sweptakes/static/js/787.b90ea991.chunk.js",
+    "index.html": "/sweptakes/index.html",
+    "main.756ce2da.css.map": "/sweptakes/static/css/main.756ce2da.css.map",
+    "main.68971bd5.js.map": "/sweptakes/static/js/main.68971bd5.js.map",
+    "787.b90ea991.chunk.js.map": "/sweptakes/static/js/787.b90ea991.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.756ce2da.css",
+    "static/js/main.68971bd5.js"
+  ]
+}
