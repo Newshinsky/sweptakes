@@ -286,12 +286,12 @@ export const soccerScore = createSlice({
             },
             {
                 "_id": "629c9c8a5749c4077500eade",
-                "away_score": 0,
+                "away_score": 1,
                 "away_scorers": [
                     "null"
                 ],
                 "away_team_id": "22",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "E",
                 "home_score": 0,
                 "home_scorers": [
@@ -303,7 +303,7 @@ export const soccerScore = createSlice({
                 "matchday": "4",
                 "persian_date": "1400-09-02 19:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "group",
                 "home_team_fa": "اسپانیا",
                 "away_team_fa": "کاستاریکا",
