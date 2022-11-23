@@ -45,15 +45,20 @@ const PredictionPage = () => {
         })
     }, [])
 
+    const allMatchSort = [...allMatch].sort((a, b) =>
+        new Date(a.local_date).getTime() - new Date(b.local_date).getTime()
+    )
+
     return (
         <div className="prediction-page-wrapper">
-            {allMatch.map((e) => {
+            {allMatchSort.map((e) => {
 
                 const isPredictionMade = firebasePrediction?.find(elem => e._id === elem._id)
 
                 return (
                     <div className="match-info-wrapper" key={e._id + e.userID}>
                         <div className="prediction-match-item-wrapper">
+                           
                             <div className="home-team-wrapper">
                                 <p> {e.home_team_en}</p>
                                 <img src={e.home_flag} alt="home flag" />

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { setAllMatch } from '../projectSlice'
+import { setAllMatch, setAllMatchError, setToken } from '../projectSlice'
 
 
 export const registerAPI = () => {
@@ -20,7 +20,7 @@ export const registerAPI = () => {
     })
 }
 
-export const loginAPI = () => {
+export const loginAPI = () => dispatch => {
     const data = JSON.stringify({
         "email": "ck3025@xcoxc.com",
         "password": "28121994",
@@ -31,22 +31,24 @@ export const loginAPI = () => {
             'Content-Type': 'application/json',
         }
     }).then((response) => {
-        console.log(response);
+        dispatch(setToken(response.data.data.token))
     }).catch((error) => {
         console.log(error)
     })
 }
 
-export const getAllMatchAPI = () => dispatch => {
+export const getAllMatchAPI = (token) => dispatch => {
+
     axios.get('/api/v1/match', {
         headers: {
             'Content-Type': 'application/json',
-            "Authorization": `Bearer ${"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYyOTQ0ZjZjYWNjMDZmNDhkZDViYWEiLCJpYXQiOjE2NjgzMTc2OTYsImV4cCI6MTY2ODQwNDA5Nn0.EIFHa7ZvUW9c4MVmiYVxlH3ZoJSfOnLSyY6sX-FdGco"}`
+            "Authorization": `Bearer ${token}`
         }
     })
         .then((response) => {
             dispatch(setAllMatch(response.data.data))
         }).catch((error) => {
-            console.log('object :>> ', error);
+            dispatch(setAllMatchError(error.response.status))
+            console.log('error :>> ', error.response.status);
         })
 }

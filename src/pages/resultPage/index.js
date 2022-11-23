@@ -10,7 +10,7 @@ const ResultPage = () => {
     const allMatch = useSelector(state => state.soccerScore.allMatch)
     const allPredictions = useSelector(state => state.soccerScore.allPredictions)
 
-    const allFinishedMatches = allMatch.filter(e => e.finished === "TRUE")
+    const allFinishedMatches = allMatch.filter(e => e.time_elapsed !== "notstarted")
     let allPredicionInArray = []
 
     const result = []
@@ -85,7 +85,7 @@ const ResultPage = () => {
                                     <div className="result-page-match-pred" key={pred._id + pred.userID}>
                                         <div className="player">
                                             <h6> Игрок</h6>
-                                            <h2> {pred.userID}</h2>
+                                            <h3> {pred.userID}</h3>
                                         </div>
                                         <div className="match">
                                             <div className="match-label">

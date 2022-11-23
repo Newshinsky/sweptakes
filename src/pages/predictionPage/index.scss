@@ -77,11 +77,17 @@
 
         .submit-button {
             font-size: 2vw;
-            color: #fff;
+            background-color: rgb(255, 255, 255);
             margin-bottom: 1vw;
             padding: 2vw;
             border-radius: 2vw;
             color: rgb(0, 0, 0);
+        }
+
+        .submit-button:disabled,
+        .submit-button[disabled] {
+            background-color: #0000006b;
+            color: rgb(255, 255, 255);
         }
     }
 
@@ -149,6 +155,7 @@
             }
 
         }
+
         .match-info-type {
             display: flex;
             flex-direction: column;
