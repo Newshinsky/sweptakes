@@ -10,7 +10,9 @@ const ResultPage = () => {
     const allMatch = useSelector(state => state.soccerScore.allMatch)
     const allPredictions = useSelector(state => state.soccerScore.allPredictions)
 
-    const allFinishedMatches = allMatch.filter(e => e.time_elapsed !== "notstarted")
+    const allFinishedMatches = allMatch.filter(e => e.time_elapsed !== "notstarted").sort((a, b) =>
+        new Date(b.local_date).getTime() - new Date(a.local_date).getTime()
+)
     let allPredicionInArray = []
 
     const result = []

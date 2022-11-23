@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { child, get, getDatabase, ref, set } from "firebase/database";
 import useInput from '../../hooks/useInput';
-import { setFirebasePrediction } from '../../projectSlice';
+import { setAllMatch, setFirebasePrediction } from '../../projectSlice';
 
 import './index.scss';
 const dateNow = new Date().toISOString();
@@ -46,16 +46,25 @@ const PredictionPage = () => {
         })
     }, [])
 
+    useEffect(() => {
+        const updatedAllMatch =  [...allMatch].map((e) => {
+            if(dateNow >= new Date(`${e.local_date} GMT+03:00`).toISOString()) {
+                return {...e, finished: "TRUE", time_elapsed: "finished"};
+            }
+            return e;
+        });
+        dispatch(setAllMatch(updatedAllMatch))
+    }, [])
+
     const allMatchSort = [...allMatch].sort((a, b) =>
         new Date(a.local_date).getTime() - new Date(b.local_date).getTime()
     )
-
+    .filter((e) => e.finished !== "TRUE");
     return (
         <div className="prediction-page-wrapper">
             {allMatchSort.map((e) => {
 
                 const isPredictionMade = firebasePrediction?.find(elem => e._id === elem._id)
-                const isStarted = dateNow >= new Date(`${e.local_date} GMT+03:00`).toISOString();
 
                 return (
                     <div className="match-info-wrapper" key={e._id + e.userID}>
@@ -111,7 +120,7 @@ const PredictionPage = () => {
                             <h1>{e.type} </h1>
                             <h1> {e.local_date}</h1>
                         </div>
-                        {e.time_elapsed === "notstarted" && !isStarted
+                        {e.time_elapsed === "notstarted"
                             ? <button
                                 className="submit-button"
                                 onClick={() => onSubmitClick(localStorage.userID, e)}

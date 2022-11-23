@@ -321,7 +321,7 @@ export const soccerScore = createSlice({
                 "away_team_id": "24",
                 "finished": "FALSE",
                 "group": "F",
-                "home_score": 0,
+                "home_score": 1,
                 "home_scorers": [
                     "null"
                 ],
