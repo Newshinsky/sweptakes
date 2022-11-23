@@ -6,6 +6,7 @@ import useInput from '../../hooks/useInput';
 import { setFirebasePrediction } from '../../projectSlice';
 
 import './index.scss';
+const dateNow = new Date().toISOString();
 
 const PredictionPage = () => {
     const dispatch = useDispatch()
@@ -54,6 +55,7 @@ const PredictionPage = () => {
             {allMatchSort.map((e) => {
 
                 const isPredictionMade = firebasePrediction?.find(elem => e._id === elem._id)
+                const isStarted = dateNow >= new Date(`${e.local_date} GMT+03:00`).toISOString();
 
                 return (
                     <div className="match-info-wrapper" key={e._id + e.userID}>
@@ -109,7 +111,7 @@ const PredictionPage = () => {
                             <h1>{e.type} </h1>
                             <h1> {e.local_date}</h1>
                         </div>
-                        {e.time_elapsed === "notstarted"
+                        {e.time_elapsed === "notstarted" && !isStarted
                             ? <button
                                 className="submit-button"
                                 onClick={() => onSubmitClick(localStorage.userID, e)}
