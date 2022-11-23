@@ -70,7 +70,7 @@ const StandingPage = () => {
         <div className="standing-page-wrapper">
             {Array.from(result.reduce(
                 (m, { userID, totalScore }) => m.set(userID, (m.get(userID) || 0) + totalScore), new Map
-            ), ([userID, totalScore]) => ({ userID, totalScore })).map(e => {
+            ), ([userID, totalScore]) => ({ userID, totalScore })).sort((a, b)=> b.totalScore-a.totalScore).map(e => {
                 return (
                     <div className="standing-page-info" key={e.userID + e.totalScore}>
                         <h1>{e.userID}    </h1>
