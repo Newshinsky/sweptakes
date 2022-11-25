@@ -459,9 +459,9 @@ export const soccerScore = createSlice({
                     "null"
                 ],
                 "away_team_id": "8",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "B",
-                "home_score": 0,
+                "home_score": 2,
                 "home_scorers": [
                     "null"
                 ],
@@ -471,7 +471,7 @@ export const soccerScore = createSlice({
                 "matchday": "6",
                 "persian_date": "1400-09-04 13:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "group",
                 "home_team_fa": "ایران",
                 "away_team_fa": "ولز",
