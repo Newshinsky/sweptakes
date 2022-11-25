@@ -29,7 +29,6 @@ const StandingPage = () => {
     const countVotes = () => {
         let allPredicionInArrayCopy = [...allPredicionInArray]
 
-
         for (let i = 0; i < allFinishedMatches.length; i++) {
             const oneMatch = allFinishedMatches[i]
             let matchPoints
