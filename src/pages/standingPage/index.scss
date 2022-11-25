@@ -17,17 +17,25 @@
             font-size: 3vw;
             padding: .5vw;
         }
+
+        .standing-page-info-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            align-content: center;
+        }
+
+        img {
+            width: 5vw;
+            padding-right: 1vw;
+        }
     }
 }
 
 @media (max-width: 800px) {
     .standing-page-wrapper {
-
-      
-
         .standing-page-info {
-        
-
             h1 {
                 color: #fff;
                 font-size: 5vw;

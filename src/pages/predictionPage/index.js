@@ -1,15 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { child, get, getDatabase, ref, set } from "firebase/database";
 import useInput from '../../hooks/useInput';
 import { setAllMatch, setFirebasePrediction } from '../../projectSlice';
 
+import Loader from '../../components/loader/index'
+
 import './index.scss';
 const dateNow = new Date().toISOString();
 
 const PredictionPage = () => {
     const dispatch = useDispatch()
+
+    const [isLoading, setIsLoading] = useState(true)
 
     const homeScore = useInput("");
     const awayScore = useInput("");
@@ -43,13 +47,15 @@ const PredictionPage = () => {
         const dbRef = ref(getDatabase());
         get(child(dbRef, localStorage.userID)).then((snapshot) => {
             dispatch(setFirebasePrediction(snapshot.val()))
+            setIsLoading(false)
         })
+
     }, [])
 
     useEffect(() => {
-        const updatedAllMatch =  [...allMatch].map((e) => {
-            if(dateNow >= new Date(`${e.local_date} GMT+03:00`).toISOString()) {
-                return {...e, finished: "TRUE", time_elapsed: "finished"};
+        const updatedAllMatch = [...allMatch].map((e) => {
+            if (dateNow >= new Date(`${e.local_date} GMT+03:00`).toISOString()) {
+                return { ...e, finished: "TRUE", time_elapsed: "finished" };
             }
             return e;
         });
@@ -59,7 +65,11 @@ const PredictionPage = () => {
     const allMatchSort = [...allMatch].sort((a, b) =>
         new Date(a.local_date).getTime() - new Date(b.local_date).getTime()
     )
-    .filter((e) => e.finished !== "TRUE");
+        .filter((e) => e.finished !== "TRUE");
+
+    if (isLoading) {
+        return <Loader />
+    }
     return (
         <div className="prediction-page-wrapper">
             {allMatchSort.map((e) => {
@@ -69,7 +79,7 @@ const PredictionPage = () => {
                 return (
                     <div className="match-info-wrapper" key={e._id + e.userID}>
                         <div className="prediction-match-item-wrapper">
-                           
+
                             <div className="home-team-wrapper">
                                 <p> {e.home_team_en}</p>
                                 <img src={e.home_flag} alt="home flag" />
@@ -133,6 +143,7 @@ const PredictionPage = () => {
             })}
         </div >
     );
-};
+}
+
 
 export default PredictionPage;

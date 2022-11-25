@@ -70,10 +70,34 @@ const StandingPage = () => {
         <div className="standing-page-wrapper">
             {Array.from(result.reduce(
                 (m, { userID, totalScore }) => m.set(userID, (m.get(userID) || 0) + totalScore), new Map
-            ), ([userID, totalScore]) => ({ userID, totalScore })).sort((a, b)=> b.totalScore-a.totalScore).map(e => {
+            ), ([userID, totalScore]) => ({ userID, totalScore })).sort((a, b) => b.totalScore - a.totalScore).map(e => {
                 return (
                     <div className="standing-page-info" key={e.userID + e.totalScore}>
-                        <h1>{e.userID}    </h1>
+                        {e.userID === "Андрей" ?
+                            <div className="standing-page-info-item">
+                                <img src={"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/125px-Flag_of_Uruguay.svg.png"} alt="flag" />
+                                <h1> {e.userID}    </h1>
+                            </div> : null}
+                        {e.userID === "Цыганский барон" ?
+                            <div className="standing-page-info-item">
+                                <img src={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/125px-Flag_of_Portugal.svg.png"} alt="flag" />
+                                <h1> {e.userID}    </h1>
+                            </div> : null}
+                        {e.userID === "Анджей Дуда" ?
+                            <div className="standing-page-info-item">
+                                <img src={"https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/125px-Flag_of_Brazil.svg.png"} alt="flag" />
+                                <h1> {e.userID}    </h1>
+                            </div> : null}
+                        {e.userID === "Молодой Чингиз" ?
+                            <div className="standing-page-info-item">
+                                <img src={"https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/125px-Flag_of_Brazil.svg.png"} alt="flag" />
+                                <h1> {e.userID}    </h1>
+                            </div> : null}
+                        {e.userID === "Павлик" ?
+                            <div className="standing-page-info-item">
+                                <img src={"https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/125px-Flag_of_England.svg.png"} alt="flag" />
+                                <h1> {e.userID}    </h1>
+                            </div> : null}
                         <h1>{Math.round(e.totalScore)} points </h1>
                     </div>
                 )
