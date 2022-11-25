@@ -94,7 +94,7 @@ const StandingPage = () => {
                                 <h1> {e.userID}    </h1>
                             </div> : null}
                         {e.userID === "Павлик" ?
-                            <div className="standing-page-info-item">
+                            <div className="standing-page-info-item"> 
                                 <img src={"https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/125px-Flag_of_England.svg.png"} alt="flag" />
                                 <h1> {e.userID}    </h1>
                             </div> : null}

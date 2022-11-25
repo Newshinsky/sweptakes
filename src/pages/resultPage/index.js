@@ -1,18 +1,23 @@
 import { child, get, getDatabase, ref } from "firebase/database";
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+
+import Loader from '../../components/loader/index'
+
 import { setAllFirebasePrediction } from '../../projectSlice';
+
 import './index.scss';
 
 const ResultPage = () => {
 
+    const [isLoading, setIsLoading] = useState(true)
     const dispatch = useDispatch()
     const allMatch = useSelector(state => state.soccerScore.allMatch)
     const allPredictions = useSelector(state => state.soccerScore.allPredictions)
 
     const allFinishedMatches = allMatch.filter(e => e.time_elapsed !== "notstarted").sort((a, b) =>
         new Date(b.local_date).getTime() - new Date(a.local_date).getTime()
-)
+    )
     let allPredicionInArray = []
 
     const result = []
@@ -26,6 +31,7 @@ const ResultPage = () => {
         const dbRef = ref(getDatabase());
         get(child(dbRef, "/")).then((snapshot) => {
             dispatch(setAllFirebasePrediction(snapshot.val()))
+            setIsLoading(false)
         })
     }, [])
 
@@ -64,6 +70,10 @@ const ResultPage = () => {
         }
     }
     countVotes()
+
+    if (isLoading) {
+        return <Loader />
+    }
 
     return (
         <div className="result-page-wrapper">
