@@ -566,12 +566,12 @@ export const soccerScore = createSlice({
             },
             {
                 "_id": "629c9c8a5749c4077500eae8",
-                "away_score": 0,
+                "away_score": 1,
                 "away_scorers": [
                     "null"
                 ],
                 "away_team_id": "16",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "D",
                 "home_score": 0,
                 "home_scorers": [
@@ -583,7 +583,7 @@ export const soccerScore = createSlice({
                 "matchday": "7",
                 "persian_date": "1400-09-05 13:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "group",
                 "home_team_fa": "تونس",
                 "away_team_fa": "استرالیا",
