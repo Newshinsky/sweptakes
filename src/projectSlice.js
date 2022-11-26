@@ -1327,7 +1327,7 @@ export const soccerScore = createSlice({
                     "null"
                 ],
                 "away_team_id": "32",
-                "finished": "TRUE",
+                "finished": "FALSE",
                 "group": "G",
                 "home_score": 0,
                 "home_scorers": [
@@ -1339,7 +1339,7 @@ export const soccerScore = createSlice({
                 "matchday": "13",
                 "persian_date": "1400-09-11 22:30",
                 "stadium_id": "1",
-                "time_elapsed": "finished",
+                "time_elapsed": "notstarted",
                 "type": "group",
                 "home_team_fa": "برزیل",
                 "away_team_fa": "کامرون",
