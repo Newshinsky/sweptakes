@@ -19,7 +19,7 @@ function App() {
 
   const [userID, setUserID] = useState(localStorage.userID)
   const [isLogin, setIsLogin] = useState(false)
-  const [isLoading, setIsLoading] = useState(true)
+  // const [isLoading, setIsLoading] = useState(true)
 
   const errorStatus = useSelector(state => state.soccerScore.allMatchErrorStatus)
   const allMatch = useSelector(state => state.soccerScore.allMatch)
@@ -32,39 +32,39 @@ function App() {
     setUserID(e.target.value)
   }
 
-  useEffect(() => {
-    const getToken = fetch("/login")
-      .then((res) =>
-        res.json()
-      ).then(token => {
-        return token
-      })
-    const setFetchToken = () => {
-      getToken.then((token) => {
-        dispatch(setToken(token.data.token))
-      });
-    };
+  // useEffect(() => {
+  //   const getToken = fetch("/login")
+  //     .then((res) =>
+  //       res.json()
+  //     ).then(token => {
+  //       return token
+  //     })
+  //   const setFetchToken = () => {
+  //     getToken.then((token) => {
+  //       dispatch(setToken(token.data.token))
+  //     });
+  //   };
 
-    const getMatch = fetch("/match")
-      .then((res) =>
-        res.json()
-      ).then(match => {
-        return match
-      })
-    const setFetchMatch = () => {
-      getMatch.then((match) => {
-        dispatch(setAllMatch(match.data))
-      });
-    };
-    setFetchToken()
-    setFetchMatch()
-    setIsLoading(false)
-  }, []);
+  //   const getMatch = fetch("/match")
+  //     .then((res) =>
+  //       res.json()
+  //     ).then(match => {
+  //       return match
+  //     })
+  //   const setFetchMatch = () => {
+  //     getMatch.then((match) => {
+  //       dispatch(setAllMatch(match.data))
+  //     });
+  //   };
+  //   setFetchToken()
+  //   setFetchMatch()
+  //   setIsLoading(false)
+  // }, []); получить  матчи
 
 
-  if (isLoading) {
-    return <Loader />
-  }
+  // if (isLoading) {
+  //   return <Loader />
+  // }
 
   if (!isLogin && !localStorage.userID) {
     return <div className="App">
