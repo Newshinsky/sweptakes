@@ -706,12 +706,12 @@ export const soccerScore = createSlice({
             },
             {
                 "_id": "629c9c8a5749c4077500eaed",
-                "away_score": 0,
+                "away_score": 2,
                 "away_scorers": [
                     "null"
                 ],
                 "away_team_id": "17",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "F",
                 "home_score": 0,
                 "home_scorers": [
@@ -723,7 +723,7 @@ export const soccerScore = createSlice({
                 "matchday": "8",
                 "persian_date": "1400-09-06 16:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "group",
                 "home_team_fa": "بلژیک",
                 "away_team_fa": "مراکش",
@@ -734,14 +734,14 @@ export const soccerScore = createSlice({
             },
             {
                 "_id": "629c9c8a5749c4077500eaee",
-                "away_score": 0,
+                "away_score": 1,
                 "away_scorers": [
                     "null"
                 ],
                 "away_team_id": "24",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "F",
-                "home_score": 0,
+                "home_score": 4,
                 "home_scorers": [
                     "null"
                 ],
@@ -751,7 +751,7 @@ export const soccerScore = createSlice({
                 "matchday": "8",
                 "persian_date": "1400-09-06 19:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "group",
                 "home_team_fa": "کرواسی",
                 "away_team_fa": "کانادا",
@@ -762,14 +762,14 @@ export const soccerScore = createSlice({
             },
             {
                 "_id": "629c9c8a5749c4077500eaef",
-                "away_score": 0,
+                "away_score": 1,
                 "away_scorers": [
                     "null"
                 ],
                 "away_team_id": "19",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "E",
-                "home_score": 0,
+                "home_score": 1,
                 "home_scorers": [
                     "null"
                 ],
@@ -779,7 +779,7 @@ export const soccerScore = createSlice({
                 "matchday": "8",
                 "persian_date": "1400-09-06 22:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "group",
                 "home_team_fa": "اسپانیا",
                 "away_team_fa": "آلمان",
