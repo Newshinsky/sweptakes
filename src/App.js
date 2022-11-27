@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 
 import { getAllMatchAPI, loginAPI } from "./api/index"
 
-import { setToken } from './projectSlice'
+import { setToken, setAllMatch } from './projectSlice'
 
 import NavBar from "./components/navBar/index";
 import PredictionPage from './pages/predictionPage/index';
@@ -23,7 +23,6 @@ function App() {
 
   const errorStatus = useSelector(state => state.soccerScore.allMatchErrorStatus)
   const allMatch = useSelector(state => state.soccerScore.allMatch)
-  const token = useSelector(state => state.soccerScore.token)
 
   const onAlertClick = () => {
     localStorage.setItem('userID', userID);
@@ -34,20 +33,38 @@ function App() {
   }
 
   useEffect(() => {
-    //dispatch(getAllMatchAPI(token))
-   // dispatch(getAllMatchAPI())
-  }, [token])
+    const getToken = fetch("/login")
+      .then((res) =>
+        res.json()
+      ).then(token => {
+        return token
+      })
+    const setFetchToken = () => {
+      getToken.then((token) => {
+        dispatch(setToken(token.data.token))
+      });
+    };
 
-  // useEffect(() => {
-  //   if (!!allMatch.length || !!errorStatus) {
-  //     setIsLoading(false)
-  //   }
-  // }, [allMatch.length, errorStatus])
+    const getMatch = fetch("/match")
+      .then((res) =>
+        res.json()
+      ).then(match => {
+        return match
+      })
+    const setFetchMatch = () => {
+      getMatch.then((match) => {
+        dispatch(setAllMatch(match.data))
+      });
+    };
+    setFetchToken()
+    setFetchMatch()
+    setIsLoading(false)
+  }, []);
 
 
-  // if (isLoading) {
-  //   return <Loader />
-  // }
+  if (isLoading) {
+    return <Loader />
+  }
 
   if (!isLogin && !localStorage.userID) {
     return <div className="App">
@@ -66,9 +83,7 @@ function App() {
     </div>
   }
 
-  const onLoginButtonClick = () => {
-    dispatch(loginAPI())
-  }
+
 
   return (
     <div className="App">

@@ -1,10 +1,10 @@
 import axios from 'axios';
-import { setAllMatch, setAllMatchError, setToken } from '../projectSlice'
+import { setAllMatch, setAllMatchError, setToken } from '../projectSlice.js'
 
 
 export const registerAPI = () => {
     const data = JSON.stringify({
-        "name": "Alex ",
+        "name": "Alex",
         "email": "ck3025@xcoxc.com",
         "password": "28121994",
         "passwordConfirm": "28121994"

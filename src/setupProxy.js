@@ -2,19 +2,19 @@ const { createProxyMiddleware } = require('http-proxy-middleware')
 
 module.exports = app => {
     app.use(
-        createProxyMiddleware('/api/v1/user',
+        createProxyMiddleware('1',
             {
-                target: 'http://api.cup2022.ir',
-                changeOrigin: true
+                target: '1',
+                changeOrigin: false
             }
         )
     )
     app.use(
-        createProxyMiddleware('/api/v1/match',
+        createProxyMiddleware('1',
             {
-                target: 'http://api.cup2022.ir',
-                changeOrigin: true
+                target: '1',
+                changeOrigin: false
             }
         )
     )
-}
+ }
