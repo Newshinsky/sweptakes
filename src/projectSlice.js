@@ -678,7 +678,7 @@ export const soccerScore = createSlice({
             },
             {
                 "_id": "629c9c8a5749c4077500eaec",
-                "away_score": 0,
+                "away_score": 1,
                 "away_scorers": [
                     "null"
                 ],

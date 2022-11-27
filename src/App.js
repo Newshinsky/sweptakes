@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Route, Routes } from "react-router-dom";
 
-import { getAllMatchAPI, loginAPI } from "./api/index"
-
-import { setToken, setAllMatch } from './projectSlice'
+import { setAllMatch, setToken } from './projectSlice';
 
 import NavBar from "./components/navBar/index";
 import PredictionPage from './pages/predictionPage/index';
 import ResultPage from './pages/resultPage/index';
 import StandingPage from './pages/standingPage/index';
-import Loader from './components/loader/index'
 
 import './App.scss';
 
@@ -19,10 +16,6 @@ function App() {
 
   const [userID, setUserID] = useState(localStorage.userID)
   const [isLogin, setIsLogin] = useState(false)
-  // const [isLoading, setIsLoading] = useState(true)
-
-  const errorStatus = useSelector(state => state.soccerScore.allMatchErrorStatus)
-  const allMatch = useSelector(state => state.soccerScore.allMatch)
 
   const onAlertClick = () => {
     localStorage.setItem('userID', userID);
@@ -58,13 +51,7 @@ function App() {
   //   };
   //   setFetchToken()
   //   setFetchMatch()
-  //   setIsLoading(false)
-  // }, []); получить  матчи
-
-
-  // if (isLoading) {
-  //   return <Loader />
-  // }
+  // }, []); получить матчи
 
   if (!isLogin && !localStorage.userID) {
     return <div className="App">
@@ -83,8 +70,6 @@ function App() {
     </div>
   }
 
-
-
   return (
     <div className="App">
       <NavBar />
@@ -93,20 +78,6 @@ function App() {
         <Route path="/Result" element={<ResultPage />} />
         <Route path="/Standing" element={<StandingPage />} />
       </Routes>
-      {/* {(errorStatus === 429
-        ? <h1 className="App-error-message">  Превышено количество запросов, попробуй через 5 минут</h1>
-        : null)}
-      {(errorStatus === 401
-        ? <>
-          <h1 className="App-error-message"> Тыкни и жди </h1>
-          <button
-            className="App-error-button"
-            onClick={onLoginButtonClick}>
-            Получить данные
-          </button>
-        </>
-        : null)
-      } */}
     </div >
   );
 
