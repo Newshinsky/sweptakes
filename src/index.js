@@ -8,7 +8,7 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import { Provider } from 'react-redux'
-import { BrowserRouter } from "react-router-dom"
+import { HashRouter  } from "react-router-dom"
 
 const firebaseConfig = {
   apiKey: "AIzaSyAj_z4uNCAb8O6Vqmih-Fbs_Mm0cm2ZeYY",
@@ -27,11 +27,11 @@ export { db };
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter >
       <Provider store={store}>
         <App />
       </Provider>
-    </BrowserRouter>
+    </HashRouter >
   </React.StrictMode>
 );
 

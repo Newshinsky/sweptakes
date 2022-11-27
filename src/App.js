@@ -74,9 +74,9 @@ function App() {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path="/sweptakes" element={<PredictionPage />} />
-        <Route path="/sweptakes/Result" element={<ResultPage />} />
-        <Route path="/sweptakes/Standing" element={<StandingPage />} />
+        <Route path="/" element={<PredictionPage />} />
+        <Route path="/Result" element={<ResultPage />} />
+        <Route path="/Standing" element={<StandingPage />} />
       </Routes>
       {/* {(errorStatus === 429
         ? <h1 className="App-error-message">  Превышено количество запросов, попробуй через 5 минут</h1>

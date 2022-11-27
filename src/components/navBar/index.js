@@ -6,9 +6,9 @@ import './index.scss';
 const NavBar = () => {
     return (
         <ul>
-            <li><Link to="/sweptakes">Prediction</Link></li>
-            <li><Link to="/sweptakes/Result">Results</Link></li>
-            <li><Link to="/sweptakes/Standing">Standing</Link></li>
+            <li><Link to="/">Prediction</Link></li>
+            <li><Link to="/Result">Results</Link></li>
+            <li><Link to="/Standing">Standing</Link></li>
         </ul>
 
     );

@@ -599,7 +599,7 @@ export const soccerScore = createSlice({
                     "null"
                 ],
                 "away_team_id": "10",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "C",
                 "home_score": 2,
                 "home_scorers": [
@@ -611,7 +611,7 @@ export const soccerScore = createSlice({
                 "matchday": "7",
                 "persian_date": "1400-09-05 16:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "group",
                 "home_team_fa": "لهستان",
                 "away_team_fa": "عربستان",
@@ -627,7 +627,7 @@ export const soccerScore = createSlice({
                     "null"
                 ],
                 "away_team_id": "11",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "D",
                 "home_score": 2,
                 "home_scorers": [
@@ -639,7 +639,7 @@ export const soccerScore = createSlice({
                 "matchday": "7",
                 "persian_date": "1400-09-05 19:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "group",
                 "home_team_fa": "فرانسه",
                 "away_team_fa": "دانمارک",
@@ -655,7 +655,7 @@ export const soccerScore = createSlice({
                     "null"
                 ],
                 "away_team_id": "13",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "C",
                 "home_score": 2,
                 "home_scorers": [
@@ -667,7 +667,7 @@ export const soccerScore = createSlice({
                 "matchday": "7",
                 "persian_date": "1400-09-05 22:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "group",
                 "home_team_fa": "آرژانتین",
                 "away_team_fa": "مکزیک",
