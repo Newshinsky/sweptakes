@@ -46,12 +46,13 @@ function App() {
   //     })
   //   const setFetchMatch = () => {
   //     getMatch.then((match) => {
+  //       console.log(JSON.stringify(match.data))
   //       dispatch(setAllMatch(match.data))
   //     });
   //   };
   //   setFetchToken()
   //   setFetchMatch()
-  // }, []); получить матчи
+  // }, []); // получить матчи
 
   if (!isLogin && !localStorage.userID) {
     return <div className="App">

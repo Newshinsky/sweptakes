@@ -8,7 +8,7 @@ export const soccerScore = createSlice({
                 "_id": "629c9c8a5749c4077500ead4",
                 "away_score": 2,
                 "away_scorers": [
-                    "null"
+                    "Cody Gakpo,Davy Klaassen\n"
                 ],
                 "away_team_id": "4",
                 "finished": "TRUE",
@@ -28,7 +28,7 @@ export const soccerScore = createSlice({
                 "home_team_fa": "سنگال",
                 "away_team_fa": "هلند",
                 "home_team_en": "Senegal",
-                "away_team_en": "Nederlands",
+                "away_team_en": "Netherlands",
                 "home_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Flag_of_Senegal.svg/125px-Flag_of_Senegal.svg.png",
                 "away_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/125px-Flag_of_the_Netherlands.svg.png"
             },
@@ -36,14 +36,14 @@ export const soccerScore = createSlice({
                 "_id": "629c9c8a5749c4077500ead5",
                 "away_score": 2,
                 "away_scorers": [
-                    "null"
+                    "Mehdi Taremi,Mehdi Taremi"
                 ],
                 "away_team_id": "6",
                 "finished": "TRUE",
                 "group": "B",
                 "home_score": 6,
                 "home_scorers": [
-                    "null"
+                    "Jude Bellingham,Bukayo Saka,Raheem Sterling,Bukayo Saka,Marcus Rashford,Jack Grealish"
                 ],
                 "home_team_id": "5",
                 "id": "2",
@@ -64,14 +64,14 @@ export const soccerScore = createSlice({
                 "_id": "629c9c8a5749c4077500ead6",
                 "away_score": 2,
                 "away_scorers": [
-                    "null"
+                    "Enner Valencia,Enner Valencia"
                 ],
                 "away_team_id": "2",
                 "finished": "TRUE",
                 "group": "A",
                 "home_score": 0,
                 "home_scorers": [
-                    "null"
+                    ""
                 ],
                 "home_team_id": "1",
                 "id": "3",
@@ -92,14 +92,14 @@ export const soccerScore = createSlice({
                 "_id": "629c9c8a5749c4077500ead7",
                 "away_score": 1,
                 "away_scorers": [
-                    "null"
+                    "Gareth Bale"
                 ],
                 "away_team_id": "8",
                 "finished": "TRUE",
                 "group": "B",
                 "home_score": 1,
                 "home_scorers": [
-                    "null"
+                    "Timothy Weah"
                 ],
                 "home_team_id": "7",
                 "id": "4",
@@ -120,14 +120,14 @@ export const soccerScore = createSlice({
                 "_id": "629c9c8a5749c4077500ead8",
                 "away_score": 2,
                 "away_scorers": [
-                    "null"
+                    "Saleh Al Shehri, Salem Al Dawsari"
                 ],
                 "away_team_id": "10",
                 "finished": "TRUE",
                 "group": "C",
                 "home_score": 1,
                 "home_scorers": [
-                    "null"
+                    "Lionel Messi"
                 ],
                 "home_team_id": "9",
                 "id": "5",
@@ -204,14 +204,14 @@ export const soccerScore = createSlice({
                 "_id": "629c9c8a5749c4077500eadb",
                 "away_score": 1,
                 "away_scorers": [
-                    "null"
+                    "Craig Goodwin"
                 ],
                 "away_team_id": "16",
                 "finished": "TRUE",
                 "group": "D",
                 "home_score": 4,
                 "home_scorers": [
-                    "null"
+                    "Adrien Rabiot,Olivier Giroud,Kylian Mbappé"
                 ],
                 "home_team_id": "15",
                 "id": "8",
@@ -260,14 +260,14 @@ export const soccerScore = createSlice({
                 "_id": "629c9c8a5749c4077500eadd",
                 "away_score": 2,
                 "away_scorers": [
-                    "null"
+                    "Ritsu Doan,Takuma Asano"
                 ],
                 "away_team_id": "20",
                 "finished": "TRUE",
                 "group": "E",
                 "home_score": 1,
                 "home_scorers": [
-                    "null"
+                    "İlkay Gündoğan"
                 ],
                 "home_team_id": "19",
                 "id": "10",
@@ -295,7 +295,7 @@ export const soccerScore = createSlice({
                 "group": "E",
                 "home_score": 7,
                 "home_scorers": [
-                    "null"
+                    "Dani Olmo,Marco Asensio,Ferran Torres,Ferran Torres,Gavi,Carlos Soler,Álvaro Morata"
                 ],
                 "home_team_id": "21",
                 "id": "11",
@@ -323,7 +323,7 @@ export const soccerScore = createSlice({
                 "group": "F",
                 "home_score": 1,
                 "home_scorers": [
-                    "null"
+                    "Michy Batshuayi"
                 ],
                 "home_team_id": "23",
                 "id": "12",
@@ -351,13 +351,13 @@ export const soccerScore = createSlice({
                 "group": "G",
                 "home_score": 2,
                 "home_scorers": [
-                    "null"
+                    "Richarlison,Richarlison"
                 ],
                 "home_team_id": "25",
                 "id": "13",
                 "local_date": "11/24/2022 22:00",
                 "matchday": "5",
-                "persian_date": "1400-09-03 13:30",
+                "persian_date": "1400-09-03 22:30",
                 "stadium_id": "1",
                 "time_elapsed": "finished",
                 "type": "group",
@@ -372,20 +372,20 @@ export const soccerScore = createSlice({
                 "_id": "629c9c8a5749c4077500eae1",
                 "away_score": 2,
                 "away_scorers": [
-                    "null"
+                    "André Ayew,Osman Bukari"
                 ],
                 "away_team_id": "28",
                 "finished": "TRUE",
                 "group": "H",
                 "home_score": 3,
                 "home_scorers": [
-                    "null"
+                    "Cristiano Ronaldo,João Félix,Rafael Leão"
                 ],
                 "home_team_id": "27",
                 "id": "14",
                 "local_date": "11/24/2022 19:00",
                 "matchday": "5",
-                "persian_date": "1400-09-03 16:30",
+                "persian_date": "1400-09-03 19:30",
                 "stadium_id": "1",
                 "time_elapsed": "finished",
                 "type": "group",
@@ -413,7 +413,7 @@ export const soccerScore = createSlice({
                 "id": "15",
                 "local_date": "11/24/2022 16:00",
                 "matchday": "5",
-                "persian_date": "1400-09-03 19:30",
+                "persian_date": "1400-09-03 16:30",
                 "stadium_id": "1",
                 "time_elapsed": "finished",
                 "type": "group",
@@ -435,13 +435,13 @@ export const soccerScore = createSlice({
                 "group": "G",
                 "home_score": 1,
                 "home_scorers": [
-                    "null"
+                    "Breel Embolo"
                 ],
                 "home_team_id": "31",
                 "id": "16",
                 "local_date": "11/24/2022 13:00",
                 "matchday": "5",
-                "persian_date": "1400-09-03 22:30",
+                "persian_date": "1400-09-03 13:30",
                 "stadium_id": "1",
                 "time_elapsed": "finished",
                 "type": "group",
@@ -463,7 +463,7 @@ export const soccerScore = createSlice({
                 "group": "B",
                 "home_score": 2,
                 "home_scorers": [
-                    "null"
+                    "Rouzbeh Cheshmi,Ramin Rezaeian"
                 ],
                 "home_team_id": "6",
                 "id": "17",
@@ -484,14 +484,14 @@ export const soccerScore = createSlice({
                 "_id": "629c9c8a5749c4077500eae5",
                 "away_score": 3,
                 "away_scorers": [
-                    "null"
+                    "Boulaye Dia,Famara Diedhiou,Bamba Dieng"
                 ],
                 "away_team_id": "3",
                 "finished": "TRUE",
                 "group": "A",
                 "home_score": 1,
                 "home_scorers": [
-                    "null"
+                    "Mohammed Muntari"
                 ],
                 "home_team_id": "1",
                 "id": "18",
@@ -512,14 +512,14 @@ export const soccerScore = createSlice({
                 "_id": "629c9c8a5749c4077500eae6",
                 "away_score": 1,
                 "away_scorers": [
-                    "null"
+                    "Enner Valencia"
                 ],
                 "away_team_id": "2",
                 "finished": "TRUE",
                 "group": "A",
                 "home_score": 1,
                 "home_scorers": [
-                    "null"
+                    "Cody Gakpo"
                 ],
                 "home_team_id": "4",
                 "id": "19",
@@ -531,7 +531,7 @@ export const soccerScore = createSlice({
                 "type": "group",
                 "home_team_fa": "هلند",
                 "away_team_fa": "اکوادور",
-                "home_team_en": "Nederlands",
+                "home_team_en": "Netherlands",
                 "away_team_en": "Ecuador",
                 "home_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/125px-Flag_of_the_Netherlands.svg.png",
                 "away_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/125px-Flag_of_Ecuador.svg.png"
@@ -568,7 +568,7 @@ export const soccerScore = createSlice({
                 "_id": "629c9c8a5749c4077500eae8",
                 "away_score": 1,
                 "away_scorers": [
-                    "null"
+                    "Mitchell Duke"
                 ],
                 "away_team_id": "16",
                 "finished": "TRUE",
@@ -603,7 +603,7 @@ export const soccerScore = createSlice({
                 "group": "C",
                 "home_score": 2,
                 "home_scorers": [
-                    "null"
+                    "Piotr Zieliński,Robert Lewandowski"
                 ],
                 "home_team_id": "14",
                 "id": "22",
@@ -624,14 +624,14 @@ export const soccerScore = createSlice({
                 "_id": "629c9c8a5749c4077500eaea",
                 "away_score": 1,
                 "away_scorers": [
-                    "null"
+                    "Andreas Christensen"
                 ],
                 "away_team_id": "11",
                 "finished": "TRUE",
                 "group": "D",
                 "home_score": 2,
                 "home_scorers": [
-                    "null"
+                    "Kylian Mbappé(2)"
                 ],
                 "home_team_id": "15",
                 "id": "23",
@@ -659,7 +659,7 @@ export const soccerScore = createSlice({
                 "group": "C",
                 "home_score": 2,
                 "home_scorers": [
-                    "null"
+                    "Lionel Messi,Enzo Fernández"
                 ],
                 "home_team_id": "9",
                 "id": "24",
@@ -680,7 +680,7 @@ export const soccerScore = createSlice({
                 "_id": "629c9c8a5749c4077500eaec",
                 "away_score": 1,
                 "away_scorers": [
-                    "null"
+                    "Keysher Fuller"
                 ],
                 "away_team_id": "22",
                 "finished": "TRUE",
@@ -708,7 +708,7 @@ export const soccerScore = createSlice({
                 "_id": "629c9c8a5749c4077500eaed",
                 "away_score": 2,
                 "away_scorers": [
-                    "null"
+                    "Abdelhamid Sabiri,Zakaria Aboukhlal"
                 ],
                 "away_team_id": "17",
                 "finished": "TRUE",
@@ -736,14 +736,14 @@ export const soccerScore = createSlice({
                 "_id": "629c9c8a5749c4077500eaee",
                 "away_score": 1,
                 "away_scorers": [
-                    "null"
+                    "Alphonso Davies"
                 ],
                 "away_team_id": "24",
                 "finished": "TRUE",
                 "group": "F",
                 "home_score": 4,
                 "home_scorers": [
-                    "null"
+                    "Andrej Kramarić(2) ,Marko Livaja,Lovro Majer"
                 ],
                 "home_team_id": "18",
                 "id": "27",
@@ -764,14 +764,14 @@ export const soccerScore = createSlice({
                 "_id": "629c9c8a5749c4077500eaef",
                 "away_score": 1,
                 "away_scorers": [
-                    "null"
+                    "Niclas Füllkrug"
                 ],
                 "away_team_id": "19",
                 "finished": "TRUE",
                 "group": "E",
                 "home_score": 1,
                 "home_scorers": [
-                    "null"
+                    "Álvaro Morata"
                 ],
                 "home_team_id": "21",
                 "id": "28",
@@ -792,14 +792,14 @@ export const soccerScore = createSlice({
                 "_id": "629c9c8a5749c4077500eaf0",
                 "away_score": 3,
                 "away_scorers": [
-                    "null"
+                    "Jean-Charles Castelletto,Vincent Aboubakar,Eric Maxim Choupo-Moting"
                 ],
                 "away_team_id": "32",
                 "finished": "TRUE",
                 "group": "G",
                 "home_score": 3,
                 "home_scorers": [
-                    "null"
+                    "Strahinja Pavlović,Sergej Milinković-Savić,Aleksandar Mitrović"
                 ],
                 "home_team_id": "26",
                 "id": "29",
@@ -820,14 +820,14 @@ export const soccerScore = createSlice({
                 "_id": "629c9c8a5749c4077500eaf1",
                 "away_score": 3,
                 "away_scorers": [
-                    "null"
+                    "Mohammed Salisu,Mohammed Kudus(2)"
                 ],
                 "away_team_id": "28",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "H",
                 "home_score": 2,
                 "home_scorers": [
-                    "null"
+                    "Cho Gue-sung(2)"
                 ],
                 "home_team_id": "30",
                 "id": "30",
@@ -835,7 +835,7 @@ export const soccerScore = createSlice({
                 "matchday": "9",
                 "persian_date": "1400-09-07 16:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "group",
                 "home_team_fa": "کره جنوبی",
                 "away_team_fa": "غنا",
@@ -1007,7 +1007,7 @@ export const soccerScore = createSlice({
                 "type": "group",
                 "home_team_fa": "هلند",
                 "away_team_fa": "قطر",
-                "home_team_en": "Nederlands",
+                "home_team_en": "Netherlands",
                 "away_team_en": "Qatar",
                 "home_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/125px-Flag_of_the_Netherlands.svg.png",
                 "away_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Qatar.svg/125px-Flag_of_Qatar.svg.png"
@@ -1027,9 +1027,9 @@ export const soccerScore = createSlice({
                 ],
                 "home_team_id": "11",
                 "id": "37",
-                "local_date": "11/29/2022 18:00",
+                "local_date": "11/30/2022 18:00",
                 "matchday": "11",
-                "persian_date": "1400-09-08 18:30",
+                "persian_date": "1400-09-09 18:30",
                 "stadium_id": "1",
                 "time_elapsed": "notstarted",
                 "type": "group",
@@ -1055,9 +1055,9 @@ export const soccerScore = createSlice({
                 ],
                 "home_team_id": "12",
                 "id": "38",
-                "local_date": "11/29/2022 18:00",
+                "local_date": "11/30/2022 18:00",
                 "matchday": "11",
-                "persian_date": "1400-09-08 18:30",
+                "persian_date": "1400-09-09 18:30",
                 "stadium_id": "1",
                 "time_elapsed": "notstarted",
                 "type": "group",
