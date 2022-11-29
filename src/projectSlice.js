@@ -851,9 +851,9 @@ export const soccerScore = createSlice({
                     "null"
                 ],
                 "away_team_id": "31",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "G",
-                "home_score": 0,
+                "home_score": 1,
                 "home_scorers": [
                     "null"
                 ],
@@ -863,7 +863,7 @@ export const soccerScore = createSlice({
                 "matchday": "9",
                 "persian_date": "1400-09-07 19:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "group",
                 "home_team_fa": "برزیل",
                 "away_team_fa": "سوئیس",
@@ -879,9 +879,9 @@ export const soccerScore = createSlice({
                     "null"
                 ],
                 "away_team_id": "29",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "H",
-                "home_score": 0,
+                "home_score": 2,
                 "home_scorers": [
                     "null"
                 ],
@@ -891,7 +891,7 @@ export const soccerScore = createSlice({
                 "matchday": "9",
                 "persian_date": "1400-09-07 22:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "group",
                 "home_team_fa": "پرتغال",
                 "away_team_fa": "اروگوئه",
