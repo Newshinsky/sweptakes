@@ -958,14 +958,14 @@ export const soccerScore = createSlice({
             },
             {
                 "_id": "629c9c8a5749c4077500eaf6",
-                "away_score": 0,
+                "away_score": 2,
                 "away_scorers": [
                     "null"
                 ],
                 "away_team_id": "3",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "A",
-                "home_score": 0,
+                "home_score": 1,
                 "home_scorers": [
                     "null"
                 ],
@@ -975,7 +975,7 @@ export const soccerScore = createSlice({
                 "matchday": "10",
                 "persian_date": "1400-09-08 18:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "group",
                 "home_team_fa": "اکوادور",
                 "away_team_fa": "سنگال",
@@ -991,9 +991,9 @@ export const soccerScore = createSlice({
                     "null"
                 ],
                 "away_team_id": "1",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "A",
-                "home_score": 0,
+                "home_score": 2,
                 "home_scorers": [
                     "null"
                 ],
@@ -1003,7 +1003,7 @@ export const soccerScore = createSlice({
                 "matchday": "10",
                 "persian_date": "1400-09-08 18:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "group",
                 "home_team_fa": "هلند",
                 "away_team_fa": "قطر",
