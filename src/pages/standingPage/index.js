@@ -34,8 +34,10 @@ const StandingPage = () => {
             let matchPoints
             if (oneMatch["type"] === "group") {
                 matchPoints = 100
-            } else {
+            } else if (oneMatch["type"] === "R16" || oneMatch["type"] === "QR") {
                 matchPoints = 200
+            } else {
+                matchPoints = 400
             }
             allPredicionInArrayCopy = allPredicionInArray.filter(e => e._id === oneMatch._id)
             let match = allPredicionInArrayCopy.map(e => {
@@ -93,7 +95,7 @@ const StandingPage = () => {
                                 <h1> {e.userID}    </h1>
                             </div> : null}
                         {e.userID === "Павлик" ?
-                            <div className="standing-page-info-item"> 
+                            <div className="standing-page-info-item">
                                 <img src={"https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/125px-Flag_of_England.svg.png"} alt="flag" />
                                 <h1> {e.userID}    </h1>
                             </div> : null}

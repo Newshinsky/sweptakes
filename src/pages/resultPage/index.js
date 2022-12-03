@@ -42,8 +42,10 @@ const ResultPage = () => {
             const oneMatch = allFinishedMatches[i]
             if (oneMatch["type"] === "group") {
                 matchPoints = 100
-            } else {
+            } else if (oneMatch["type"] === "R16" || oneMatch["type"] === "QR") {
                 matchPoints = 200
+            } else {
+                matchPoints = 400
             }
             allPredicionInArrayCopy = allPredicionInArray.filter(e => e._id === oneMatch._id)
             let match = allPredicionInArrayCopy.map(e => {

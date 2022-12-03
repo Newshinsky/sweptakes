@@ -5,6 +5,8 @@ import { child, get, getDatabase, ref, set } from "firebase/database";
 import useInput from '../../hooks/useInput';
 import { setAllMatch, setFirebasePrediction } from '../../projectSlice';
 
+import img from "../../img/img.png"
+
 import Loader from '../../components/loader/index'
 
 import './index.scss';
@@ -82,7 +84,7 @@ const PredictionPage = () => {
 
                             <div className="home-team-wrapper">
                                 <p> {e.home_team_en}</p>
-                                <img src={e.home_flag} alt="home flag" />
+                                <img src={!!e.home_flag ? e.home_flag : img} alt="home flag" />
                                 {e.time_elapsed === "notstarted"
                                     ?
                                     <input
@@ -122,7 +124,7 @@ const PredictionPage = () => {
                                     />
                                     : <h1>{e.away_score}</h1>
                                 }
-                                <img src={e.away_flag} alt="home flag" />
+                                <img src={!!e.away_flag ? e.away_flag : img} alt="home flag" />
                                 <p> {e.away_team_en}</p>
                             </div>
                         </div>
