@@ -1350,14 +1350,14 @@ export const soccerScore = createSlice({
             },
             {
                 "_id": "638923be0eab2168b945af31",
-                "away_score": 0,
+                "away_score": 3,
                 "away_scorers": [
                     "null"
                 ],
                 "away_team_id": "4",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "R16",
-                "home_score": 0,
+                "home_score": 1,
                 "home_scorers": [
                     "null"
                 ],
@@ -1367,7 +1367,7 @@ export const soccerScore = createSlice({
                 "matchday": "14",
                 "persian_date": "1400-09-12 18:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "R16",
                 "home_team_fa": "آمریکا",
                 "away_team_fa": "هلند",
@@ -1378,14 +1378,14 @@ export const soccerScore = createSlice({
             },
             {
                 "_id": "638923be0eab2168b945af32",
-                "away_score": 0,
+                "away_score": 1,
                 "away_scorers": [
                     "null"
                 ],
                 "away_team_id": "9",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "R16",
-                "home_score": 0,
+                "home_score": 2,
                 "home_scorers": [
                     "null"
                 ],
@@ -1395,7 +1395,7 @@ export const soccerScore = createSlice({
                 "matchday": "14",
                 "persian_date": "1400-09-12 22:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "R16",
                 "home_team_fa": "استرالیا",
                 "away_team_fa": "آرژانتین",
