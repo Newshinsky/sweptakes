@@ -1406,14 +1406,14 @@ export const soccerScore = createSlice({
             },
             {
                 "_id": "638923be0eab2168b945af33",
-                "away_score": 0,
+                "away_score": 3,
                 "away_scorers": [
                     "null"
                 ],
                 "away_team_id": "15",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "R16",
-                "home_score": 0,
+                "home_score": 1,
                 "home_scorers": [
                     "null"
                 ],
@@ -1423,7 +1423,7 @@ export const soccerScore = createSlice({
                 "matchday": "15",
                 "persian_date": "1400-09-13 18:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "R16",
                 "home_team_fa": "لهستان",
                 "away_team_fa": "فرانسه",
@@ -1434,12 +1434,12 @@ export const soccerScore = createSlice({
             },
             {
                 "_id": "638923be0eab2168b945af34",
-                "away_score": 0,
+                "away_score": 3,
                 "away_scorers": [
                     "null"
                 ],
                 "away_team_id": "5",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "R16",
                 "home_score": 0,
                 "home_scorers": [
@@ -1451,7 +1451,7 @@ export const soccerScore = createSlice({
                 "matchday": "15",
                 "persian_date": "1400-09-13 22:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "R16",
                 "home_team_fa": "سنگال",
                 "away_team_fa": "انگلستان",
