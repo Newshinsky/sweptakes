@@ -1462,14 +1462,14 @@ export const soccerScore = createSlice({
             },
             {
                 "_id": "638923be0eab2168b945af35",
-                "away_score": 0,
+                "away_score": 1,
                 "away_scorers": [
                     "null"
                 ],
                 "away_team_id": "20",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "R16",
-                "home_score": 0,
+                "home_score": 1,
                 "home_scorers": [
                     "null"
                 ],
@@ -1479,7 +1479,7 @@ export const soccerScore = createSlice({
                 "matchday": "16",
                 "persian_date": "1400-09-14 18:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "R16",
                 "home_team_fa": "کرواسی",
                 "away_team_fa": "ژاپن",
@@ -1490,14 +1490,14 @@ export const soccerScore = createSlice({
             },
             {
                 "_id": "638923be0eab2168b945af36",
-                "away_score": 0,
+                "away_score": 4,
                 "away_scorers": [
                     "null"
                 ],
                 "away_team_id": "25",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "R16",
-                "home_score": 0,
+                "home_score": 1,
                 "home_scorers": [
                     "null"
                 ],
@@ -1507,7 +1507,7 @@ export const soccerScore = createSlice({
                 "matchday": "16",
                 "persian_date": "1400-09-14 22:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "R16",
                 "home_team_fa": "کره جنوبی",
                 "away_team_fa": "برزیل",
