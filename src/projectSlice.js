@@ -1518,12 +1518,12 @@ export const soccerScore = createSlice({
             },
             {
                 "_id": "638923be0eab2168b945af37",
-                "away_score": 17,
+                "away_score": 0,
                 "away_scorers": [
                     "null"
                 ],
                 "away_team_id": "17",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "R16",
                 "home_score": 0,
                 "home_scorers": [
@@ -1535,7 +1535,7 @@ export const soccerScore = createSlice({
                 "matchday": "17",
                 "persian_date": "1400-09-15 18:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "R16",
                 "home_team_fa": "اسپانیا",
                 "away_team_fa": "مراکش",
@@ -1546,14 +1546,14 @@ export const soccerScore = createSlice({
             },
             {
                 "_id": "638923be0eab2168b945af38",
-                "away_score": 0,
+                "away_score": 1,
                 "away_scorers": [
                     "null"
                 ],
                 "away_team_id": "25",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "R16",
-                "home_score": 0,
+                "home_score": 6,
                 "home_scorers": [
                     "null"
                 ],
@@ -1563,7 +1563,7 @@ export const soccerScore = createSlice({
                 "matchday": "17",
                 "persian_date": "1400-09-15 22:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "R16",
                 "home_team_fa": "پرتغال",
                 "away_team_fa": "برزیل",
@@ -1578,14 +1578,14 @@ export const soccerScore = createSlice({
                 "away_scorers": [
                     "null"
                 ],
-                "away_team_id": "0",
+                "away_team_id": "18",
                 "finished": "FALSE",
                 "group": "QR",
                 "home_score": 0,
                 "home_scorers": [
                     "null"
                 ],
-                "home_team_id": "0",
+                "home_team_id": "25",
                 "id": "56",
                 "local_date": "12/9/2022 18:00",
                 "matchday": "18",
@@ -1593,12 +1593,12 @@ export const soccerScore = createSlice({
                 "stadium_id": "1",
                 "time_elapsed": "notstarted",
                 "type": "QR",
-                "home_team_fa": "--",
-                "away_team_fa": "--",
-                "home_team_en": "--",
-                "away_team_en": "--",
-                "home_flag": "",
-                "away_flag": ""
+                "home_team_fa": "برزیل",
+                "away_team_fa": "کرواسی",
+                "home_team_en": "Brazil",
+                "away_team_en": "Croatia",
+                "home_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/125px-Flag_of_Brazil.svg.png",
+                "away_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Croatia.svg/125px-Flag_of_Croatia.svg.png"
             },
             {
                 "_id": "6389265e0eab2168b945af3b",
@@ -1606,14 +1606,14 @@ export const soccerScore = createSlice({
                 "away_scorers": [
                     "null"
                 ],
-                "away_team_id": "0",
+                "away_team_id": "9",
                 "finished": "FALSE",
                 "group": "QR",
                 "home_score": 0,
                 "home_scorers": [
                     "null"
                 ],
-                "home_team_id": "0",
+                "home_team_id": "4",
                 "id": "57",
                 "local_date": "12/9/2022 22:00",
                 "matchday": "18",
@@ -1621,12 +1621,12 @@ export const soccerScore = createSlice({
                 "stadium_id": "1",
                 "time_elapsed": "notstarted",
                 "type": "QR",
-                "home_team_fa": "--",
-                "away_team_fa": "--",
-                "home_team_en": "--",
-                "away_team_en": "--",
-                "home_flag": "",
-                "away_flag": ""
+                "home_team_fa": "هلند",
+                "away_team_fa": "آرژانتین",
+                "home_team_en": "Netherlands",
+                "away_team_en": "Argentina",
+                "home_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/125px-Flag_of_the_Netherlands.svg.png",
+                "away_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/125px-Flag_of_Argentina.svg.png"
             },
             {
                 "_id": "6389265e0eab2168b945af3c",
@@ -1634,14 +1634,14 @@ export const soccerScore = createSlice({
                 "away_scorers": [
                     "null"
                 ],
-                "away_team_id": "0",
+                "away_team_id": "27",
                 "finished": "FALSE",
                 "group": "QR",
                 "home_score": 0,
                 "home_scorers": [
                     "null"
                 ],
-                "home_team_id": "0",
+                "home_team_id": "17",
                 "id": "58",
                 "local_date": "12/10/2022 18:00",
                 "matchday": "19",
@@ -1649,12 +1649,12 @@ export const soccerScore = createSlice({
                 "stadium_id": "1",
                 "time_elapsed": "notstarted",
                 "type": "QR",
-                "home_team_fa": "--",
-                "away_team_fa": "--",
-                "home_team_en": "--",
-                "away_team_en": "--",
-                "home_flag": "",
-                "away_flag": ""
+                "home_team_fa": "مراکش",
+                "away_team_fa": "پرتغال",
+                "home_team_en": "Morocco",
+                "away_team_en": "Portugal",
+                "home_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/125px-Flag_of_Morocco.svg.png",
+                "away_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/125px-Flag_of_Portugal.svg.png"
             },
             {
                 "_id": "6389265e0eab2168b945af3d",
@@ -1662,14 +1662,14 @@ export const soccerScore = createSlice({
                 "away_scorers": [
                     "null"
                 ],
-                "away_team_id": "0",
+                "away_team_id": "5",
                 "finished": "FALSE",
                 "group": "QR",
                 "home_score": 0,
                 "home_scorers": [
                     "null"
                 ],
-                "home_team_id": "0",
+                "home_team_id": "15",
                 "id": "59",
                 "local_date": "12/10/2022 22:00",
                 "matchday": "19",
@@ -1677,12 +1677,12 @@ export const soccerScore = createSlice({
                 "stadium_id": "1",
                 "time_elapsed": "notstarted",
                 "type": "QR",
-                "home_team_fa": "--",
-                "away_team_fa": "--",
-                "home_team_en": "--",
-                "away_team_en": "--",
-                "home_flag": "",
-                "away_flag": ""
+                "home_team_fa": "فرانسه",
+                "away_team_fa": "انگلستان",
+                "home_team_en": "France",
+                "away_team_en": "England",
+                "home_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/125px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png",
+                "away_flag": "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/125px-Flag_of_England.svg.png"
             },
             {
                 "_id": "6389265e0eab2168b945af3e",

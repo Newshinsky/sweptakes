@@ -25,34 +25,34 @@ function App() {
     setUserID(e.target.value)
   }
 
-  // useEffect(() => {
-  //   const getToken = fetch("/login")
-  //     .then((res) =>
-  //       res.json()
-  //     ).then(token => {
-  //       return token
-  //     })
-  //   const setFetchToken = () => {
-  //     getToken.then((token) => {
-  //       dispatch(setToken(token.data.token))
-  //     });
-  //   };
+  useEffect(() => {
+    const getToken = fetch("/login")
+      .then((res) =>
+        res.json()
+      ).then(token => {
+        return token
+      })
+    const setFetchToken = () => {
+      getToken.then((token) => {
+        dispatch(setToken(token.data.token))
+      });
+    };
 
-  //   const getMatch = fetch("/match")
-  //     .then((res) =>
-  //       res.json()
-  //     ).then(match => {
-  //       return match
-  //     })
-  //   const setFetchMatch = () => {
-  //     getMatch.then((match) => {
-  //       console.log(JSON.stringify(match.data))
-  //       dispatch(setAllMatch(match.data))
-  //     });
-  //   };
-  //   setFetchToken()
-  //   setFetchMatch()
-  // }, []); // получить матчи
+    const getMatch = fetch("/match")
+      .then((res) =>
+        res.json()
+      ).then(match => {
+        return match
+      })
+    const setFetchMatch = () => {
+      getMatch.then((match) => {
+        console.log(JSON.stringify(match.data))
+        dispatch(setAllMatch(match.data))
+      });
+    };
+    setFetchToken()
+    setFetchMatch()
+  }, []); 
 
   if (!isLogin && !localStorage.userID) {
     return <div className="App">
