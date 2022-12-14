@@ -1691,9 +1691,9 @@ export const soccerScore = createSlice({
                     "null"
                 ],
                 "away_team_id": "18",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "semi",
-                "home_score": 0,
+                "home_score": 3,
                 "home_scorers": [
                     "null"
                 ],
@@ -1703,7 +1703,7 @@ export const soccerScore = createSlice({
                 "matchday": "20",
                 "persian_date": "1400-09-22 22:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "semi",
                 "home_team_fa": "آرژانتین",
                 "away_team_fa": "کرواسی",
@@ -1719,9 +1719,9 @@ export const soccerScore = createSlice({
                     "null"
                 ],
                 "away_team_id": "17",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "semi",
-                "home_score": 0,
+                "home_score": 2,
                 "home_scorers": [
                     "null"
                 ],
@@ -1731,7 +1731,7 @@ export const soccerScore = createSlice({
                 "matchday": "21",
                 "persian_date": "1400-09-23 22:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "semi",
                 "home_team_fa": "فرانسه",
                 "away_team_fa": "مراکش",
