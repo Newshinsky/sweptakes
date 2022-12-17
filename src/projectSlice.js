@@ -1695,7 +1695,7 @@ export const soccerScore = createSlice({
                 "group": "semi",
                 "home_score": 3,
                 "home_scorers": [
-                    "null"
+                    "Lionel Messi,Julián Álvarez(2)"
                 ],
                 "home_team_id": "9",
                 "id": "60",
@@ -1714,14 +1714,14 @@ export const soccerScore = createSlice({
             },
             {
                 "_id": "6389265e0eab2168b945af3f",
-                "away_score": 0,
+                "away_score": 2,
                 "away_scorers": [
-                    "null"
+                    "Theo Hernández,Randal Kolo Muani"
                 ],
                 "away_team_id": "17",
                 "finished": "TRUE",
                 "group": "semi",
-                "home_score": 2,
+                "home_score": 0,
                 "home_scorers": [
                     "null"
                 ],
@@ -1746,14 +1746,14 @@ export const soccerScore = createSlice({
                 "away_scorers": [
                     "null"
                 ],
-                "away_team_id": "0",
+                "away_team_id": "17",
                 "finished": "FALSE",
                 "group": "3RD",
                 "home_score": 0,
                 "home_scorers": [
                     "null"
                 ],
-                "home_team_id": "0",
+                "home_team_id": "18",
                 "id": "62",
                 "local_date": "12/17/2022 22:00",
                 "matchday": "22",
@@ -1761,12 +1761,12 @@ export const soccerScore = createSlice({
                 "stadium_id": "1",
                 "time_elapsed": "notstarted",
                 "type": "3RD",
-                "home_team_fa": "--",
-                "away_team_fa": "--",
-                "home_team_en": "--",
-                "away_team_en": "--",
-                "home_flag": "",
-                "away_flag": ""
+                "home_team_fa": "کرواسی",
+                "away_team_fa": "مراکش",
+                "home_team_en": "Croatia",
+                "away_team_en": "Morocco",
+                "home_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Croatia.svg/125px-Flag_of_Croatia.svg.png",
+                "away_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/125px-Flag_of_Morocco.svg.png"
             },
             {
                 "_id": "6389265e0eab2168b945af41",
@@ -1774,14 +1774,14 @@ export const soccerScore = createSlice({
                 "away_scorers": [
                     "null"
                 ],
-                "away_team_id": "0",
+                "away_team_id": "15",
                 "finished": "FALSE",
                 "group": "FIN",
                 "home_score": 0,
                 "home_scorers": [
                     "null"
                 ],
-                "home_team_id": "0",
+                "home_team_id": "9",
                 "id": "63",
                 "local_date": "12/18/2022 22:00",
                 "matchday": "23",
@@ -1789,12 +1789,12 @@ export const soccerScore = createSlice({
                 "stadium_id": "1",
                 "time_elapsed": "notstarted",
                 "type": "FIN",
-                "home_team_fa": "--",
-                "away_team_fa": "--",
-                "home_team_en": "--",
-                "away_team_en": "--",
-                "home_flag": "",
-                "away_flag": ""
+                "home_team_fa": "آرژانتین",
+                "away_team_fa": "فرانسه",
+                "home_team_en": "Argentina",
+                "away_team_en": "France",
+                "home_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/125px-Flag_of_Argentina.svg.png",
+                "away_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/125px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png"
             }
         ],
         firebasePrediction: [],
