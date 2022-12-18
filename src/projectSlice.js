@@ -1783,7 +1783,7 @@ export const soccerScore = createSlice({
                 ],
                 "home_team_id": "9",
                 "id": "63",
-                "local_date": "12/18/2022 22:00",
+                "local_date": "12/18/2022 18:00",
                 "matchday": "23",
                 "persian_date": "1400-09-27 22:30",
                 "stadium_id": "1",
