@@ -1770,14 +1770,14 @@ export const soccerScore = createSlice({
             },
             {
                 "_id": "6389265e0eab2168b945af41",
-                "away_score": 0,
+                "away_score": 2,
                 "away_scorers": [
                     "null"
                 ],
                 "away_team_id": "15",
-                "finished": "FALSE",
+                "finished": "TRUE",
                 "group": "FIN",
-                "home_score": 0,
+                "home_score": 2,
                 "home_scorers": [
                     "null"
                 ],
@@ -1787,7 +1787,7 @@ export const soccerScore = createSlice({
                 "matchday": "23",
                 "persian_date": "1400-09-27 22:30",
                 "stadium_id": "1",
-                "time_elapsed": "notstarted",
+                "time_elapsed": "finished",
                 "type": "FIN",
                 "home_team_fa": "آرژانتین",
                 "away_team_fa": "فرانسه",
